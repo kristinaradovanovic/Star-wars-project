@@ -1,83 +1,116 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url("/pictures/Pictures/andy-holmes-rCbdp8VCYhQ-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url("/pictures/Pictures/andy-holmes-rCbdp8VCYhQ-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #logo img {
-    width: 350px;
-    max-height: 150px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo img {
+  width: 350px;
+  max-height: 150px;
+}
 
 .main_wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
-    flex-direction: row;
-  }
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 50px;
+  flex-direction: row;
+}
 
-  .character_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.character_wrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .character_wrapper img {
-    margin-top: 20px;
-    width: 80%;
+  margin-top: 20px;
+  width: 80%;
 }
 
 table {
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 500px; 
-    width: 100%; 
-  
-  }
-  
-  th, td {
-    padding: 8px;
-    text-align: center;
-    border: 3px solid rgb(245, 8, 174, 1);
-    color: white;
-    background-color:rgba(115, 26, 97, 0.5) ;
-  }
-  
-  #compare {
-    margin-bottom: 50px;
-  }
+  border-collapse: collapse;
+  max-width: 500px; 
+  width: 100%; 
 
-  #col-text {
-    text-align: center;
-    background-color:rgba(7, 32, 61, 0.8); 
-  }
+}
 
-  .middle {
-    background-color: rgba(7, 32, 61, 0.8);
-    color: white;
-  }
+th, td {
+  padding: 8px;
+  text-align: center;
+  border: 3px solid rgb(245, 8, 174, 1);
+  color: white;
+  background-color:rgba(115, 26, 97, 0.5) ;
+}
 
-  select, #compare {
-    border-radius: 10px;
-    background-color: rgba(237, 140, 218, 0.8);
-    border-color: white;
-    padding: 8px;
-    color: white;
-  }
+#compare {
+  margin-bottom: 50px;
+  width: 100px;
+  border-radius: 100px;
+  background-color:rgb(245, 8, 174, 0.6) ;
+  border-color: white;
+  padding: 8px;
+  color: white;
+}
+
+#col-text {
+  text-align: center;
+  background-color:rgba(7, 32, 61, 0.8); 
+}
+
+.middle {
+  background-color: rgba(7, 32, 61, 0.8);
+  color: white;
+}
+
+select {
+  border-radius: 10px;
+  background-color: rgba(237, 140, 218, 0.8);
+  border-color: white;
+  padding: 8px;
+  color: white;
+}
+
+ul {
+  border: 3px solid rgb(245, 8, 174, 1);
+  width: 300px;
+  border-radius: 20px;
+  background-color: rgba(7, 32, 61, 0.5);
+  color: white;
+  padding: 20px;
+  font-weight: 300;
+}
+
+#compare_both_char{
+  background-color:rgba(115, 26, 97, 0.5) ;
+  color: white;
+  text-align: center;
+  height: 200px;
+  padding-top: 15px;
+  max-width: 500px; 
+  width: 100%; 
+}
+
+#char1-info, #char2-info, #compare_both_char {
+  display: none;
+}
 
 
 
